@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DESAFIO</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <header></header>
+    <main class="presentacion">
+        <section class="izquierda">
+            <div class="superior">
+                <img id="logo" class="logo" src="./assets/Logo.png">
+                <div id="titulo" class="titulo"><strong>Desafío Encriptador</strong></div>
+            </div>
+            <div class="ingreso_texto">Ingrese texto aquí</div>
+            <div class="contenedor" >
+                <textarea id="texto_digitado" class="texto_contenedor" placeholder="Ingresa tu texto..."></textarea>
+                
+            </div>
+            <div class="indicaciones">¡Solo minúsculas, sin acentos ni carácteres especiales!</div>
+            <div class="botones">
+                <div class="forma_boton">
+                    <a class="boton" onclick="encriptar();">Encriptar</a>
+                </div>
+                <div class="forma_boton">
+                    <a class="boton" onclick="desencriptar();">Desencriptar</a>
+                </div>
+            </div>
+        </section>
+        <section class="derecha">
+            <div class="imagen">
+                <img id="muñeco" src="./assets/Muñeco.png">
+            </div>
+            <div class="mensaje"><b>¡Ningún mensaje fue encontrado!</b></div>
+            <div class="mensaje_secundario">Ingresa el texto que deseas encriptar o desencriptar</div>
+        </section>
+    </main>
+    <footer class="footer">
+        <b class="pie_pagina">Desarrollado por: KEVIN J. ZÚÑIGA A. / JUL'24 - ALURA LATAM</b>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>

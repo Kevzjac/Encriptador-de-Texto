@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DESAFIO</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <header></header>
+    <main class="presentacion">
+        <section class="izquierda">
+            <div class="superior">
+                <img src="./assets/Logo.png">
+                <div class="titulo"><strong>Desafío Encriptador</strong></div>
+            </div>
+            <div class="ingreso_texto">Texto Inicial</div>
+            <div class="contenedor">
+                <textarea id="texto_sin_modificar"></textarea>
+                <script>
+                    var texto_inicial = localStorage.getItem('texto_inicial');
+                    document.getElementById('texto_sin_modificar').textContent = texto_inicial;
+                </script>              
+            </div>
+            <div class="indicaciones">¡Solo minúsculas, sin acentos ni carácteres especiales!</div>
+            <div class="botones">
+                <script src="app.js"></script>
+                <div class="forma_boton" onclick="borrar();">Borrar</div>
+                <div class="forma_boton" onclick="copiar_inicial();">Copiar</div>
+            </div>
+        </section>
+        <section class="derecha">
+            <div class="ingreso_texto">Texto Final</div>
+            <div class="contenedor">
+                <textarea id="texto_modificado"></textarea>
+                <script>
+                    var texto_final = localStorage.getItem('texto_final');
+                    document.getElementById('texto_modificado').textContent = texto_final;
+                </script>              
+            </div>
+            <div class="copiar">
+                <script src="app.js"></script>
+                <a class="forma_boton" onclick="copiar();">Copiar</a>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <b class="pie_pagina">Desarrollado por: KEVIN J. ZÚÑIGA A. / JUL'24 - ALURA LATAM</b>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+:root{
+    --fuente: 'Inter', sans serif;
+}
+*{
+    padding:0;
+    margin:0;
+}
+body{
+    background-color: #DDEBF5;
+    box-sizing: border-box;
+
+}
+.izquierda{
+    width: 65%;
+    height: 90%;
+    flex-direction:column;
+}
+.superior{
+    display: flex;
+    flex-direction: row;
+    padding: 5% 0 5% 0;
+    gap: 10%;
+}
+.contenedor{
+    align-content: center;
+    justify-content: center;
+    text-align:center;
+}
+.indicaciones{
+    text-align:center;
+    color: #6c6e6e;
+    font-size: 80%;
+    padding: 20% 0 3% 0;
+}
+.forma_boton{
+    background-color: #7fc1ee;
+    border: 1.5px solid #1a4b79;
+    color:#1a4b79
+    height: 100%;
+    width: 40%;
+    border-radius: 10px;
+    text-align: center;
+    padding: 1% 2% 1% 2%;
+}
+.boton{
+    color:#163b5e;
+    font-size: 130%;
+    text-decoration:none;
+}
+.forma_boton:hover{
+    background-color: antiquewhite;
+}
+.derecha{
+    display:flex;
+    flex-direction: column;
+    width: 30%;
+    height: 100%;
+    border: 0.5px solid #000000;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    padding: 7% 0% 2% 0;
+    border-radius: 5%;
+    background-color: #FFFFFF;
+    gap: 10%;
+}
+.mensaje{
+    color:#1a4b79;
+}
+.mensaje_secundario{
+    color: #6c6e6e;
+    font-size: 80%;
+}
+.copiar{
+    display:flex;
+    align-content:center;
+    justify-content: center;
+    text-align: center;
+    gap: 5%;
+    padding: 0 5% 10% 10%;
+    flex-direction:row;
+    height: 10%;
+    width: 80%;
+}
+.footer{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 1% 0 5% 0;
+}
+.pie_pagina{
+    color:#1a4b79;
+    font-family: var(--fuente);
+}
+.titulo{
+    font-size: 300%;
+    color: #1a4b79;
+}
+.ingreso_texto{
+    text-align: center;
+    color: #1a4b79;
+    font-size: 150%;
+}
+.botones{
+    display:flex;
+    align-content:center;
+    justify-content: center;
+    text-align: center;
+    gap: 5%;
+    padding: 0 5% 10% 10%;
+    flex-direction:row;
+    height: 10%;
+    width: 80%;
+}
+.presentacion{
+    display:flex;
+    flex-direction: row;
+    padding: 2% 5% 0 5%;
+    gap: 8%;
+    font-family: var(--fuente);
+    align-items:center;
+    justify-items: center;
+}
+@media (min-width: 768px) and (max-width: 1023px){
+    .presentacion{
+        display:flex;
+        flex-direction: column;
+        padding: 0 0 0 0;
+        gap: 5%;
+        align-items:center;
+        justify-items: center;
+    }
+    .botones{
+        display:flex;
+        align-content:center;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        gap: 5%;
+        padding: 0 0 2% 20%;
+        flex-direction:row;
+        height: 8%;
+        width: 60%;
+    }
+    .derecha img{
+        display:none;
+    }
+    .titulo{
+        font-size: 250%;
+    }
+    .ingreso_texto{
+        font-size: 100%;
+    }
+    .indicaciones{
+        font-size: 60%;
+        padding: 20% 0 3% 0;
+    }
+    .boton{        
+        font-size: 100%;
+    }
+    .derecha{
+        padding: 1% 0% 1% 0;
+    }
+    .mensaje{
+        font-size: 60%;
+    }
+    .mensaje_secundario{
+        font-size: 60%;
+    }
+    .pie_pagina{
+        font-size: 80%;
+    }
+}
+@media (max-width: 767px){
+    .presentacion{
+        display:flex;
+        flex-direction: column;
+        padding: 0 0 0 0;
+        gap: 5%;
+        font-family: var(--fuente);
+        align-items:center;
+        justify-items: center;
+    }
+    .botones{
+        display:flex;
+        align-content:center;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        gap: 3px;
+        padding: 0 0 1% 30%;
+        flex-direction:column;
+        height: 6%;
+        width: 40%;
+    }
+    .derecha img{
+        display:none;
+    }
+    .titulo{
+        font-size: 150%;
+    }
+    .ingreso_texto{
+        font-size: 50%;
+    }
+    .indicaciones{
+        font-size: 40%;
+        padding: 20% 0 3% 0;
+    }
+    .boton{        
+        font-size: 70%;
+    }
+    .derecha{
+        padding: 1% 0% 1% 0;
+    }
+    .mensaje{
+        font-size: 40%;
+    }
+    .mensaje_secundario{
+        font-size: 40%;
+    }
+    .pie_pagina{
+        font-size: 60%;
+    }
+    
+}
